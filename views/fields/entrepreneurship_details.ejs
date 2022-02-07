@@ -47,13 +47,9 @@
           </div>
           <div class="col-md-6 mb-3">
             <label class="required">Faculty ID</label>
-            <select name="id" class="custom-select d-block w-100">
-              <option value="">Choose...</option>
-              <option>Faculty 1</option>
-              <option>Faculty 2</option>
-            </select>
+            <input type="text" name="id" class="form-control" required>
             <div class="invalid-feedback">
-              Please select a valid type.
+              Please enter valid details.
             </div>
           </div>
 
@@ -114,66 +110,19 @@
           <div class="col-md-6 mb-3">
             <label class="required">In Association with</label>
             <br>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="Association-CSE" value="CSE">
-              <label class="form-check-label">
-                CSE
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="Association-ISE" value="ISE">
-              <label class="form-check-label">
-                ISE
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="Association-CIVIL" value="CIVIL">
-              <label class="form-check-label">
-                CIVIL
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="Association-MECH" value="MECH">
-              <label class="form-check-label">
-                MECH
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="Association-ECE" value="ECE">
-              <label class="form-check-label">
-                ECE
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="Association-EEE" value="EEE">
-              <label class="form-check-label">
-                EEE
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="Association-BS" value="BS">
-              <label class="form-check-label">
-                BS
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="Association-MBA" value="MBA">
-              <label class="form-check-label">
-                MBA
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="Association-MCA" value="MCA">
-              <label class="form-check-label">
-                MCA
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="Association-TCE" value="TCE">
-              <label class="form-check-label">
-                TCE
-              </label>
-            </div>
+            <select name="Association" id="Association" class="custom-select d-block w-100">
+              <option value="CSE">CSE</option>
+               <option value="ISE">ISE</option>
+               <option value="CIVIL">CIVIL</option>
+               <option value="MECH">MECH</option>
+               <option value="ECE">ECE</option>
+               <option value="EEE">EEE</option>
+               <option value="BS">BS</option>
+               <option value="MBA">MBA</option>
+               <option value="MCA">MCA</option>
+               <option value="TCE">TCE</option>
+           </select>
+            
           </div>
         </div>
 

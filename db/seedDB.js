@@ -33,6 +33,7 @@ const {
   CREATE_VISITORS_DATABASE_TABLE,
   CREATE_VVIP_TABLE,
   CREATE_WELL_BEING_CLUB_TABLE,
+  CREATE_DEPARTMENT_LIST_TABLE,
 } = require("./dbTable");
 
 const CONNECTION_CONFIG = {
@@ -90,6 +91,7 @@ const createTable = async function (execQuery) {
     await execQuery(CREATE_VISITORS_DATABASE_TABLE);
     await execQuery(CREATE_VVIP_TABLE);
     await execQuery(CREATE_WELL_BEING_CLUB_TABLE);
+    await execQuery(CREATE_DEPARTMENT_LIST_TABLE);
   } catch (err) {
     throw err;
   }

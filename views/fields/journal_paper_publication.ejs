@@ -106,32 +106,19 @@
           <div class="col-md-6 mb-3">
             <label class="required">Indexed To</label>
             <br>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="Index-Scopus" value="Scopus">
-              <label class="form-check-label">
-                Scopus
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="Index-SCI" value="SCI">
-              <label class="form-check-label">
-                SCI
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="Index-Web of Science" value="Web of Science">
-              <label class="form-check-label">
-                Web of Science
-              </label>
-            </div>
-            <div>
-              <label class="required">Others</label>
-              <input type="text" name="Index-Others" class="form-control">
-            </div>
+            <select name="Index" id="Index" class="custom-select d-block w-100" onchange="showfield(this.options[this.selectedIndex].value)">
+              <option value="Scopus">Scopus</option>
+              <option value="SCI">SCI</option>
+              <option value="Web of Science">Web of Science</option>
+              <option value="Others">Others</option>
+               
+           </select>
+           
+           
 
           </div>
         </div>
-
+        
 
         <div class="row data-row">
           <div class="col-md-12 mb-3">

@@ -59,3 +59,5 @@ exports.CREATE_WELL_BEING_CLUB_TABLE = `CREATE TABLE IF NOT EXISTS well_being_cl
 exports.CREATE_COE_TABLE = `CREATE TABLE IF NOT EXISTS coe(id int Auto_increment, name varchar(255), PRIMARY KEY(id))`;
 
 exports.CREATE_CLUB_NAME_TABLE = `CREATE TABLE IF NOT EXISTS club_name(id int Auto_increment, name varchar(255), PRIMARY KEY(id))`;
+
+exports.CREATE_DEPARTMENT_LIST_TABLE = `CREATE TABLE IF NOT EXISTS department(id int AUTO_INCREMENT , name varchar(255), PRIMARY KEY(id))`;
